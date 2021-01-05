@@ -23,7 +23,7 @@ WORKDIR /var/www/html
 RUN mkdir vendor
 RUN mkdir node_modules
 
-COPY ./src/ .
+COPY ./app/ .
 RUN chmod +x artisan
 
 RUN composer install --optimize-autoloader
